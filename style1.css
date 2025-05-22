@@ -1,0 +1,115 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://raw.githubusercontent.com/DHANUSH-BHEEMSETTY/My_Resume/main/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container setup */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Main content styles */
+.content {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+/* About card styles */
+.card {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: rgba(100, 100, 100, 0.75); /* Semi-transparent grey */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Resume button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #008000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #006400;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.footer-left a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-right a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #00ffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    margin: 20px;
+  }
+
+  .footer-left, .footer-right {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
