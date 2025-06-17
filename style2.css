@@ -77,7 +77,38 @@ ul {
 ul li {
   list-style-type: disc;
 }
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px 0;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+    }
+
+    .project-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #00ffcc;
+    }
+
+    .project-description {
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 /* Buttons */
 .btn {
   display: inline-block;
